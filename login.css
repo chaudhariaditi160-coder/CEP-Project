@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* This matches the soft, multi-tonal blue background in the image */
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    background-attachment: fixed;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.page-title {
+    color: #243b53;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 45px 40px;
+    border-radius: 15px;
+    /* Soft, wide shadow to match the image depth */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    color: #243b53;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input-group label i {
+    margin-right: 8px;
+    color: #334e68;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.placeholder-icon {
+    position: absolute;
+    left: 15px;
+    color: #9fb3c8; /* Soft blue-grey for the icons inside the boxes */
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    background-color: #f5f7fa;
+    font-size: 16px;
+    color: #334e68;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: #9fb3c8;
+}
+
+input:focus {
+    border-color: #4073b0;
+    background-color: #fff;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    /* The specific blue gradient from the image button */
+    background: linear-gradient(to bottom, #4a7ab5, #335e91);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.login-btn:hover {
+    background: linear-gradient(to bottom, #335e91, #243b53);
+}
+
+.footer-text {
+    margin-top: 25px;
+    color: #627d98;
+    font-size: 15px;
+}
+
+.footer-text a {
+    color: #243b53;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
